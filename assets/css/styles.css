@@ -1221,7 +1221,11 @@
 .widget-blog ul li a:hover {
     color: #ff9600;
 }
-
+.txtNew h2 {
+    margin: 0;
+    line-height: normal;
+    letter-spacing: normal;
+}
 /*============================================
     END Blog Details
 *=============================================*/
