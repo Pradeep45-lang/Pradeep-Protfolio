@@ -1,0 +1,1227 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Protolio - Onepage Portfolio Html Template.
+    Template URI: http://tf.codexfusion.com/protolio-preview
+    Description: This is Onepage Portfolio Html Template.
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+  
+    1. Home Page
+    	1.1 Header Area
+    	1.2 Hero Area
+    	1.3 About Area
+    	1.4 Service Area
+        1.5 Portfolio Area
+        1.6 Testimonial Area
+        1.7 Blog Area
+        1.8 Subscribe Area
+        1.9 Contact Area
+        1.10 Footer Area
+    2. Blog
+    3. Blog Details
+
+-----------------------------------------------------------------------------------*/
+
+/*============================================
+	1.1 Header Area
+*=============================================*/
+
+.header-area {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.sticky-header {
+    background: #091828;
+}
+
+.logo a {
+    display: inline-block;
+}
+
+.main-menu {
+    text-align: right;
+}
+
+.main-menu nav ul li {
+    display: inline-block;
+}
+
+.main-menu nav ul li a {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 0 15px;
+    display: block;
+}
+
+.main-menu nav ul li a:hover {
+    color: #ff9600;
+    -webkit-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+
+.main-menu nav ul li.active a {
+    color: #ff9600;
+    text-shadow: 0 0;
+}
+
+/* mobile menu slicknav*/
+
+.slicknav_menu .slicknav_menutxt {
+    display: none;
+}
+
+.slicknav_menu {
+    background: transparent;
+    margin-top: 21px;
+}
+
+.slicknav_menu .slicknav_icon-bar {
+    background-color: #ffffff;
+    height: 2px;
+    width: 19px;
+    margin: 3px 0px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.slicknav_btn {
+    background-color: transparent;
+    position: relative;
+    margin-top: -42px;
+    cursor: pointer;
+}
+
+.slicknav_menu .slicknav_open .slicknav_icon-bar:nth-child(2) {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+.slicknav_menu .slicknav_open .slicknav_icon-bar:nth-child(1) {
+    -webkit-transform: rotate(45deg) translate(1px, 7px);
+    transform: rotate(45deg) translate(1px, 7px);
+}
+
+.slicknav_menu .slicknav_open .slicknav_icon-bar:nth-child(3) {
+    -webkit-transform: rotate(-45deg) translateY(-6px);
+    transform: rotate(-45deg) translateY(-6px);
+}
+
+.slicknav_menu {
+    margin: 10px 0;
+    padding: 0;
+}
+
+.slicknav_nav {
+    background: #202020;
+    margin: 0;
+    padding: 0;
+}
+
+.slicknav_nav a:visited {
+    color: #fff;
+}
+
+.slicknav_nav a:hover {
+    background: #fefefe;
+    border-radius: 0;
+    color: #000;
+}
+
+.slicknav_nav a {
+    font-size: 14px;
+}
+
+.slicknav_nav .slicknav_arrow {
+    float: right;
+}
+
+.slicknav_nav .slicknav_row:hover,
+.slicknav_nav .slicknav_row:hover .slicknav_arrow {
+    border-radius: 0;
+    background-color: #3c3333;
+}
+
+/*============================================
+	END Header Area
+*=============================================*/
+
+/*============================================
+	1.1 Hero Area
+*=============================================*/
+
+.hero-area {
+    position: relative;
+    height: 750px;
+    background: url(../images/bg/hero-bg.jpg) right bottom/cover no-repeat;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.hero-area .container,
+.hero-area .row {
+    height: 100%;
+}
+
+.hero-area .col-lg-6.align-center {
+    display: flex;
+    align-items: center;
+}
+
+.hero-content h2 {
+    font-size: 42px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 52px;
+    margin-bottom: 25px;
+}
+
+.hero-content p {
+    color: #fff;
+    padding-right: 20%;
+    font-weight: 300;
+    opacity: .9;
+}
+
+.hero-content a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: #ff9600;
+    padding: 13px 27px;
+    margin-top: 49px;
+    border-radius: 3px;
+}
+
+.hero-content a:hover {
+    color: #ff9600;
+    background: #fff;
+}
+
+.hero-img img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/*============================================
+	END Hero Area
+*=============================================*/
+
+/*============================================
+	1.3 About Area
+*=============================================*/
+
+.about-area {
+    background: #f9f9f9;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #071828;
+    line-height: 32px;
+    margin-bottom: 25px;
+}
+
+.section-title.text-white h2,
+.section-title.text-white p {
+    color: #fff;
+}
+
+.section-title p {
+    color: #808080;
+    padding: 0 15px;
+}
+
+.abt-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #171717;
+    margin-bottom: 35px;
+}
+
+.abt-left ul.list li {
+    font-size: 16px;
+    color: #171717;
+    text-transform: capitalize;
+    line-height: 20px;
+    margin: 12px 0;
+}
+
+.abt-left ul.list li span {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 12px;
+}
+
+.abt-left p {
+    color: #1c1c1c;
+    margin: 36px 0;
+    padding-right: 20px
+}
+
+.abt-social {
+    margin-top: 30px;
+}
+
+.abt-social li {
+    display: inline-block;
+}
+
+.abt-social li a {
+    display: block;
+    font-size: 16px;
+    color: #000000;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #000000;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 3px;
+}
+
+.abt-social li a:hover {
+    color: #ff9600;
+    border-color: #ff9600;
+}
+
+.single_progress {
+    margin-bottom: 15px;
+}
+
+.single_progress:last-child {
+    margin: 0;
+}
+
+.single_progress span {
+    display: block;
+    font-size: 15px;
+    color: #010101;
+    margin-bottom: 4px;
+}
+
+.progress_bar {
+    height: 28px;
+    border-radius: 33px;
+    background: #d0d0d0;
+    padding: 4px;
+}
+
+.progress_bar .p_bar {
+    height: 100%;
+    background: #fff;
+    position: relative;
+    border-radius: 33px;
+    text-align: center;
+    line-height: 21px;
+    opacity: 0;
+}
+
+.progress_bar .p_bar:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    height: 16px;
+    width: 16px;
+    background: #ff9600;
+    border-radius: 50%;
+}
+
+.progress_bar .p_bar span {
+    font-size: 14px;
+    color: #191919;
+    display: inline-block;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.left-anim {
+    animation: animate-positive 2s;
+    opacity: 1 !important;
+}
+
+@keyframes animate-positive {
+    0% {
+        width: 0%;
+    }
+}
+
+/*s-service*/
+
+.svc-meta-top {
+    display: flex;
+    overflow: hidden;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.svc-meta-top .icon {
+    margin-right: 10px;
+}
+
+.svc-meta-top h4 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #363636;
+}
+
+.s-service {
+    padding-right: 10px;
+}
+
+.s-service p {
+    color: #636363;
+}
+
+/*============================================
+	END About Area
+*=============================================*/
+
+/*============================================
+	1.4 Service Area
+*=============================================*/
+.service-area.ptb--100 {
+    padding: 100px 0 85px;
+}
+
+.service-area .section-title {
+    margin-bottom: 15px;
+}
+
+.single-service {
+    margin-top: 40px;
+    padding: 0 20px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.single-service::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    z-index: -1;
+    height: 0%;
+    width: 0%;
+    border: 1px solid #ff9600;
+    border-top: none;
+    border-right: none;
+}
+
+.single-service::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    z-index: -1;
+    height: 0%;
+    width: 0%;
+    border: 1px solid #ff9600;
+    border-left: none;
+    border-bottom: none;
+}
+
+.single-service:hover::before {
+    animation: topbottomlinefull 500ms ease-in-out 0s forwards;
+}
+
+@-webkit-keyframes topbottomlinefull {
+    0% {
+        width: 0%;
+        height: 0%;
+    }
+
+    50% {
+        width: 0%;
+        height: 100%;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@-moz-keyframes topbottomlinefull {
+    0% {
+        width: 0%;
+        height: 0%;
+    }
+
+    50% {
+        width: 0%;
+        height: 100%;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@-o-keyframes topbottomlinefull {
+    0% {
+        width: 0%;
+        height: 0%;
+    }
+
+    50% {
+        width: 0%;
+        height: 100%;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@keyframes topbottomlinefull {
+    0% {
+        width: 0%;
+        height: 0%;
+    }
+
+    50% {
+        width: 0%;
+        height: 100%;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.single-service:hover::after {
+    animation: toprightlinefull 500ms ease-in-out 0s forwards;
+    animation-delay: 500ms;
+}
+
+@-webkit-keyframes toprightlinefull {
+    0% {
+        width: 0%;
+        height: 0%;
+    }
+
+    50% {
+        width: 0%;
+        height: calc(100% - 8px);
+    }
+
+    100% {
+        width: 100%;
+        height: calc(100% - 8px);
+    }
+}
+
+@-moz-keyframes toprightlinefull {
+    0% {
+        width: 0%;
+        height: 0%;
+    }
+
+    50% {
+        width: 0%;
+        height: calc(100% - 8px);
+    }
+
+    100% {
+        width: 100%;
+        height: calc(100% - 8px);
+    }
+}
+
+@-o-keyframes toprightlinefull {
+    0% {
+        width: 0%;
+        height: 0%;
+    }
+
+    50% {
+        width: 0%;
+        height: calc(100% - 8px);
+    }
+
+    100% {
+        width: 100%;
+        height: calc(100% - 8px);
+    }
+}
+
+@keyframes toprightlinefull {
+    0% {
+        width: 0%;
+        height: 0%;
+    }
+
+    50% {
+        width: 0%;
+        height: calc(100% - 8px);
+    }
+
+    100% {
+        width: 100%;
+        height: calc(100% - 8px);
+    }
+}
+
+/*
+.service-inner {
+    margin-top: -14px;
+}
+*/
+
+.single-service h2 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #000000;
+    position: relative;
+    margin-bottom: 15px;
+    background: #f9f9f9;
+    display: inline-block;
+    padding: 0 14px;
+    margin-left: -15px;
+}
+
+.single-service h2:before {
+    content: '';
+    position: absolute;
+    left: -14px;
+    top: 3px;
+    height: 17px;
+    width: 17px;
+    background: #000000;
+    border-radius: 50%;
+}
+
+.single-service:hover h2:before {
+    background: #ff9600;
+}
+
+.single-service p {
+    color: #5c5c5c;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+/*============================================
+    END Service Area
+*=============================================*/
+
+/*============================================
+	1.5 Portfolio Area
+*=============================================*/
+
+.portfolio-menu {
+    text-align: center;
+    line-height: 18px;
+}
+
+.portfolio-menu button {
+    font-weight: 500;
+    color: #2c2d32;
+    background: transparent;
+    border: none;
+    margin: 0 18px;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.portfolio-menu button:hover {
+    color: #ff9600;
+}
+
+.portfolio-menu button.active {
+    color: #ff9600;
+}
+
+.portfolio-masonary .prt-grid {
+    margin-top: 30px;
+}
+
+.portfolio-masonary .prt {
+    position: relative;
+}
+
+.portfolio-masonary .prt-grid a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(7, 24, 40, 0.60);
+    display: flex;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.portfolio-masonary .prt-grid:hover a {
+    visibility: visible;
+    opacity: 1;
+}
+
+.portfolio-masonary .prt-grid a span {
+    margin: auto;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px);
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.portfolio-masonary .prt-grid:hover a span {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+/*============================================
+    END Portfolio Area
+*=============================================*/
+
+/*============================================
+    1.6 Testimonial Area
+*=============================================*/
+
+.tst-item {
+    padding: 0 10%;
+}
+
+.tst-thumb {
+    height: 70px;
+    width: 70px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.tst-item p {
+    color: #2c2d32;
+    margin-bottom: 20px;
+    padding: 0 90px;
+    opacity: .9;
+}
+
+.tst-item h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2c2d32;
+}
+
+.tst-item span {
+    font-size: 16px;
+    color: #2c2d32;
+    font-weight: 300;
+}
+
+.tst-carousel .owl-nav div {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 39px;
+    color: #444;
+}
+
+.tst-carousel .owl-nav .owl-next {
+    left: auto;
+    right: 0;
+}
+
+/*============================================
+    END Testimonial Area
+*=============================================*/
+
+/*============================================
+    1.7 Blog Area
+*=============================================*/
+.feature-blog .section-title {
+    margin-bottom: 50px;
+}
+
+.single-blog {
+    margin: 5px 5px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.blog-content {
+    background: #fff;
+    padding: 5px 25px;
+}
+
+.row.align-items-center .col-md-4 {
+    min-height: 100%;
+    padding: 0;
+}
+
+.blog-thumb {
+    min-height: 100%;
+}
+
+.blog-thumb img {
+    height: 100%;
+    width: 100%;
+    margin: 0 15px;
+}
+
+.blog-content h2 a {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #212121;
+    margin-bottom: 12px;
+}
+
+.blog-content h2 a:hover {
+    color: #ff9600;
+}
+
+.blog-content p {
+    color: #666666;
+    opacity: .8;
+}
+
+.blog-content > a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #212121;
+    border: 1px solid #ff9600;
+    padding: 9px 24px;
+    border-radius: 3px;
+    margin-top: 25px;
+}
+
+.blog-content > a:hover {
+    background: #ff9600;
+    color: #fff;
+    -webkit-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+
+/*============================================
+    END Blog Area
+*=============================================*/
+
+/*============================================
+    1.8 Subscribe Area
+*=============================================*/
+.subscribe-area .section-title p {
+    color: #fefefe;
+    font-weight: 300;
+    opacity: .8;
+    padding: 0 150px;
+}
+
+.subscribe-area .section-title h2 {
+    margin-bottom: 20px;
+}
+
+.subscribe-area .section-title {
+    margin-bottom: 40px;
+}
+
+.subscribe-form {
+    width: 100%;
+    max-width: 530px;
+    margin: auto;
+}
+
+.subscribe-form form {
+    position: relative;
+}
+
+.subscribe-form form input {
+    height: 50px;
+    padding-left: 20px;
+    width: 100%;
+    border-radius: 40px;
+    border: none;
+    padding-right: 150px;
+}
+
+.subscribe-form form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 150px;
+    border-radius: 40px;
+    background: #ff9600;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.subscribe-form form button:hover {
+    background: #fff;
+    color: #ff9600;
+}
+
+/*============================================
+    END Subscribe Area
+*=============================================*/
+
+/*============================================
+    1.9 Contact Area
+*=============================================*/
+
+.contact-info h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #071828;
+    line-height: 37px;
+    margin-bottom: 18px;
+}
+
+.contact-info h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #ff9600;
+    margin-bottom: 40px;
+}
+
+.contact-info h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #071828;
+    margin-bottom: 10px;
+}
+
+.contact-info ul li {
+    color: #071828;
+    line-height: 24px;
+    margin-bottom: 2px;
+}
+
+.contact-info ul li:last-child {
+    margin: 0;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    height: 60px;
+    width: 100%;
+    border: 1px solid #ff9600;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-form form textarea {
+    height: 150px;
+    padding-top: 12px;
+    resize: none;
+}
+
+.contact-form form button {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: #ff9600;
+    padding: 13px 24px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.contact-form form button:hover {
+    background: #071828;
+}
+
+/*============================================
+    END Contact Area
+*=============================================*/
+
+/*============================================
+    1.10 Footer Area
+*=============================================*/
+
+.footer-area {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-area p {
+    font-weight: 300;
+    color: #ffffff;
+}
+
+/*============================================
+    END Footer Area
+*=============================================*/
+
+/*============================================
+    2. Blog
+*=============================================*/
+
+.breadcrumbs-area {
+    position: relative;
+    padding: 220px 0 150px;
+    background: url(../images/bg/crumbs-bg.jpg) center/cover no-repeat;
+    z-index: 1;
+}
+
+.crumbs-content h4 {
+    font-size: 47px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 54px;
+    margin-bottom: 17px;
+}
+
+.crumbs-content ul li {
+    display: inline-block;
+}
+
+.crumbs-content ul li a,
+.crumbs-content ul li span {
+    display: block;
+    color: #fff;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.crumbs-content ul li a {
+    margin-right: 30px;
+    position: relative;
+}
+
+.crumbs-content ul li a:after {
+    content: '-';
+    position: absolute;
+    right: -24px;
+    top: 1px;
+}
+
+.crumbs-content ul li span {
+    color: #ff9600;
+}
+
+/*============================================
+    END Blog
+*=============================================*/
+
+/*============================================
+    3. Blog Details
+*=============================================*/
+
+.bdlts-content {
+    padding: 40px 0;
+}
+
+.bdlts-content p {
+    line-height: 28px;
+    color: #4b4b4b;
+    margin-bottom: 15px;
+}
+
+.bdlts-content p.last {
+    margin-bottom: 10px;
+}
+
+.bdlts-content blockquote p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ff9600;
+}
+
+.bcategory span,
+.bcategory a,
+.btags span,
+.btags a {
+    display: inline-block;
+    font-size: 17px;
+    line-height: 28px;
+    color: #5a5a5b;
+    font-weight: 500;
+}
+
+
+.bcategory {
+    padding-top: 10px;
+}
+
+.btags {
+    padding-bottom: 20px;
+}
+
+.btags a {
+    text-transform: uppercase;
+}
+
+.bshare {
+    margin: 0;
+}
+
+.bshare span {
+    display: inline-block;
+    font-size: 17px;
+    color: #8d8d8d;
+    font-weight: 500;
+}
+
+.bshare a {
+    display: inline-block;
+    font-size: 18px;
+    color: #767676;
+    margin-left: 13px;
+}
+
+.bshare a:hover {
+    color: #ff9600;
+}
+
+.leav-comment h4 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #5a5a5b;
+    padding-bottom: 25px;
+}
+
+.leav-comment input,
+.leav-comment textarea {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid #959595;
+    margin-bottom: 20px;
+    background: transparent;
+}
+
+.leav-comment textarea {
+    margin-top: 50px;
+    height: 40px;
+    resize: none;
+}
+
+.leav-comment button {
+    height: 45px;
+    width: 150px;
+    background: #ff9600;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* sidebar */
+
+.sidebar {}
+
+.widget {
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+}
+
+.widget:last-child {
+    margin-bottom: 0;
+}
+
+.widget-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.widget-category ul li a {
+    display: block;
+    font-size: 16px;
+    color: #575757;
+    border-bottom: 1px solid #dadada;
+    padding: 12px 0;
+}
+
+.widget-category ul li a:hover {
+    color: #ff9600;
+}
+
+.widget-category ul li:first-child a {
+    padding-top: 0;
+}
+
+.widget-category ul li:last-child a {
+    border: none;
+    padding-bottom: 0;
+}
+
+.widget-tags a {
+    color: #575757;
+    background: #e7e7e7;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 17px;
+    margin-bottom: 5px;
+    line-height: 17px;
+}
+
+.widget-tags a:hover {
+    color: #fff;
+    background: #ff9600;
+}
+
+.widget-blog ul li a {
+    display: block;
+    color: #575757;
+    font-size: 14px;
+    margin-bottom: 17px;
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 16px;
+    font-weight: 500;
+}
+
+.widget-blog ul li:last-child a {
+    border: none;
+    padding-bottom: 0;
+}
+
+.widget-blog ul li a:hover {
+    color: #ff9600;
+}
+
+/*============================================
+    END Blog Details
+*=============================================*/
